@@ -67,7 +67,7 @@ stage("Docker Build & Push"){
         }
 stage('Deploy to container'){
             steps{
-                sh 'docker run -d --name 2048 -p 3000:3000 prajapati003/devsecops_ad:lt'
+                sh 'docker run -d --name soner-con -p 3300:3300 prajapati003/devsecops_ad:lt'
             }
         }
 stage('Deploy to kubernets'){
